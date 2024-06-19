@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='Multi.css') }}">
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    <div class="bg">
+        <div id="main">
+     <h1 class="heading">Match Result of the Prediction 🏏🏏</h1>
+     <p class="para">Batting Team: {{ batting_team }} Winning Probability: {{ win_probability }}%</p>
+     <p class="para">Bowling Team: {{ bowling_team }} Winning Probability: {{ loss_probability }}%</p>
+        </div>
+    </div>
+</body>
+</html>
