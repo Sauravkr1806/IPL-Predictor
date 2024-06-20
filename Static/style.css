@@ -1,0 +1,114 @@
+.heading{
+    text-align: center;
+    margin-top: 0%;
+    color: #ff0202;
+    background-image: url('Header.png');
+}
+#pic1{
+    margin-left: 1%;
+    width: 48%;
+    height: 20%;
+    margin-bottom: 15%;
+}
+#lower{
+    width: 100%;
+    height:300px;
+}
+.head2{
+    text-align: center;
+    /* text-indent: 55%; */
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    right: 10%;
+    background-image: url("Pic2.png");
+}
+#teams{
+    width: 65%;
+    height: 32px;
+    border-radius: 0.3rem;
+    font-size: 1.25rem;
+    margin: 0.5rem;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    opacity: 0.6;
+}
+#venue{
+    width: 65%;
+    height: 32px;
+    border-radius: 0.3rem;
+    font-size: 1.25rem;
+    margin: 0.5rem;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: none;
+    opacity: 0.6;
+}
+#info{
+    width: 65%;
+    height: 32px;
+    margin: 0.5rem;
+    border-radius: 0.3rem;
+    font-size: 1.25rem;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    opacity: 0.6;
+}
+.btn{
+    width: 65%;
+    height: 32px;
+    border-radius: 0.6rem;
+    font-size: 1.25rem;
+    color: white;
+    background-color: blue;
+    padding: 6px 10px;
+    border: none;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+#stick{
+    position: absolute;
+    top: 88%;
+    left: 2%;
+    right: 15%;
+}
+#stick1{
+    position: absolute;
+    top: 12%;
+    width: 23%;
+    height: 500px;
+    left: 45%;
+    right: 20%;
+    filter: drop-shadow(2px 2px 2px white);
+}
+#last{
+    position: absolute;
+    top: 97%;
+    width: 22%;
+    left: 65%;
+    right: 15%;
+    filter: drop-shadow(15px 15px 15px white);
+}
+.footer{
+    text-align: center;
+    word-spacing: 12px;
+    margin-top: 0%;
+    font-size: 20px;
+}
+.backg{
+    /* background-image: url("back.jpg"); */
+    background-color: rgb(227, 226, 126);
+}
+
+/* For the Result */
+.back{
+    background-image: url('Trophy.png');
+}
+h3{
+    color: black;
+}
+p{
+    color: black;
+}
