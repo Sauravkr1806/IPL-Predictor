@@ -22,7 +22,7 @@ Mozilla-Firefox
 [Conclusion](https://github.com/Sauravkr1806/IPL-Predictor?tab=readme-ov-file#Conclusion).
 
 # Introduction
-The "IPL Win Predictor" leverages logistic regression to provide insights into the probability of a team winning an IPL match. This model analyzes various match features, team performance, and player statistics to offer real-time predictions.
+IPL match analysis using that data from all the IPL matches from the beginning till date. Our main motive is to predict the score and the match. 
 
 # Dataset
 
