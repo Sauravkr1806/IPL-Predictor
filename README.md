@@ -25,6 +25,15 @@ Mozilla-Firefox
 IPL match analysis using that data from all the IPL matches from the beginning till date. Our main motive is to predict the batting team probability and the losing team probability based on score and the match situation.
 
 # Dataset
+The dataset has been obtained from the repository [Indian Premier League (Cricket)](https://www.kaggle.com/manasgarg/ipl) hosted
+on Kaggle. The dataset comprised of two csv files
+“matches.csv” and “deliveries.csv”. The characteristics of the individual files are as below:
+
+#### Matches.csv
+This data file comprises of records of all matches played in IPL from season 2008 to 2017. The data file comprises of 18 features. It contains data corresponding to the name of the teams, venue of the match, outcome, umpires and details pertaining to the matches played. There are 636 entries in the data file.
+
+#### Deliveries.csv
+This data file comprises of records of every delivery bowled in each of the matches. The records are chronologically arranged. The data includes 23 features including the outcome of every delivery and the number of runs scores and the way runs were scored. There are 150460 entries in the data file.
 
 # ShowCase
 
