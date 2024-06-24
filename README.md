@@ -19,3 +19,15 @@ Mozilla-Firefox
 [Technologies_Used](https://github.com/Sauravkr1806/IPL-Predictor?tab=readme-ov-file#Technologies_Used).
 
 [Conclusion](https://github.com/Sauravkr1806/IPL-Predictor?tab=readme-ov-file#Conclusion).
+
+# OverView 
+
+# Introduction
+
+# ShowCase
+
+# Usage
+
+# Technologies_Used
+
+# Conclusion
