@@ -22,7 +22,7 @@ Mozilla-Firefox
 [Conclusion](https://github.com/Sauravkr1806/IPL-Predictor?tab=readme-ov-file#Conclusion).
 
 # Introduction
-IPL match analysis using that data from all the IPL matches from the beginning till date. Our main motive is to predict the score and the match. 
+IPL match analysis using that data from all the IPL matches from the beginning till date. Our main motive is to predict the batting team probability and the losing team probability based on score and the match situation.
 
 # Dataset
 
