@@ -27,6 +27,7 @@ Mozilla-Firefox
 # ShowCase
 
 # Usage
+To make predictions, provide the following parameters when prompted:
 
 # Technologies_Used
 
