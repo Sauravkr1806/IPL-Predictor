@@ -51,5 +51,12 @@ To make predictions, provide the following parameters when prompted:
 The predictor will calculate the probability of the batting team winning and bowling team winning based on these parameters and the current match situation.
 
 # Technologies_Used
+This project leverages the following technologies:
+
+- [Python](https://www.python.org/)
+- [Logistic Regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)
+- [NumPy](https://numpy.org/)
+- [pandas](https://pandas.pydata.org/)
+- [Streamlit](https://www.streamlit.io/)
 
 # Conclusion
