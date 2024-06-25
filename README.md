@@ -57,6 +57,6 @@ This project leverages the following technologies:
 - [Logistic Regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html)
 - [NumPy](https://numpy.org/)
 - [pandas](https://pandas.pydata.org/)
-- [Streamlit](https://www.streamlit.io/)
+- [Flask](https://flask.palletsprojects.com/en/3.0.x/)
 
 # Conclusion
