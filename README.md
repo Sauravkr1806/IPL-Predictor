@@ -60,3 +60,5 @@ This project leverages the following technologies:
 - [Flask](https://flask.palletsprojects.com/en/3.0.x/)
 
 # Conclusion
+Predicting  a  winner  in  a  sport  such  as  cricket  is especially  challenging  and  involves  very  complex processes. But with the introduction of machine learning, 
+this can be made much easier and simpler.
