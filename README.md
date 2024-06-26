@@ -61,4 +61,4 @@ This project leverages the following technologies:
 
 # Conclusion
 Predicting  a  winner  in  a  sport  such  as  cricket  is especially  challenging  and  involves  very  complex processes. But with the introduction of machine learning, 
-this can be made much easier and simpler.
+this can be made much easier and simpler.We have analyzed IPL data sets  and  predicted  game  results  based  on the 1st inning performance of the team.
