@@ -29,13 +29,14 @@ The dataset has been obtained from the repository [Indian Premier League (Cricke
 on Kaggle. The dataset comprised of two csv files
 “matches.csv” and “deliveries.csv”. The characteristics of the individual files are as below:
 
-#### Matches.csv
+### Matches.csv
 This data file comprises of records of all matches played in IPL from season 2008 to 2017. The data file comprises of 18 features. It contains data corresponding to the name of the teams, venue of the match, outcome, umpires and details pertaining to the matches played. There are 636 entries in the data file.
 
-#### Deliveries.csv
+### Deliveries.csv
 This data file comprises of records of every delivery bowled in each of the matches. The records are chronologically arranged. The data includes 23 features including the outcome of every delivery and the number of runs scores and the way runs were scored. There are 150460 entries in the data file.
 
 # ShowCase
+![Screenshot (159)]
 
 # Usage
 To make predictions, provide the following parameters when prompted:
