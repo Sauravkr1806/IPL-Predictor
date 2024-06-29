@@ -36,7 +36,7 @@ This data file comprises of records of all matches played in IPL from season 200
 This data file comprises of records of every delivery bowled in each of the matches. The records are chronologically arranged. The data includes 23 features including the outcome of every delivery and the number of runs scores and the way runs were scored. There are 150460 entries in the data file.
 
 # ShowCase
-![Screenshot (159)]
+![Screenshot (159)](https://github.com/Sauravkr1806/IPL-Predictor/assets/136987475/209667d6-4e36-46c5-b3cd-9abee9d8bb30)
 
 # Usage
 To make predictions, provide the following parameters when prompted:
