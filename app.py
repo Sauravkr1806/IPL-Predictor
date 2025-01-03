@@ -62,8 +62,10 @@ def predict():
                                    bowling_team=bowling_team, 
                                    win_probability=win_probability, 
                                    loss_probability=loss_probability)
+        except FileNotFoundError:
+          return render_template('error.html', error_message='Model file not found.')
         except Exception as e:
-            return render_template('error.html', error_message=str(e))
+          return render_template('error.html', error_message=f'Error loading model: {e}') 
     else:
         return render_template('result.html', batting_team='', 
                                bowling_team='', 
