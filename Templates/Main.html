@@ -1,122 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="shortcut icon" href="#">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IPL Prediction App</title>
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
 </head>
 <body>
-    <!-- <img src="back.jpg" alt="" width="100%" height="100%"> -->
-    <div class="backg">
-    
-    <h1 class="heading"> WELCOME TO OUR IPL PREDICTION APP</h1>
-    <h3 style="text-align: center" >We Got Our IPL Predictions, Which Predict the Possibility of team Winning an IPL match </h3>
-    <h3 style="text-align: center"> Based on the Current match situation</h3>
-    <img id="pic1" src="{{ url_for('static', filename='Mahi.png') }}" alt="">
-    
-    <div class="head2">
-        
-        <h1>IPL Winning Predictor</h1>
-        <form action = '/result' method = "post" enctype="multipart/form-data">
-            <select name="batting_team" id="teams">
-                <option value=""> Select Batting Team</option>
-                <option value="">Chennai Super kings</option>
-                <option value="">Mumbai Indians</option> 
-                <option value="">Punjab kings</option>
-                <option value="">Kolkata Knight Riders</option> 
-                <option value="">Gujarat Titans</option>
-                <option value="">Rajasthan Royals</option> 
-                <option value="">Delhi Capitals</option>
-                <option value="">Royal Challengers Bangalore</option>
-                <option value="">Sunrisers Hyderabad</option>
-                <option value="">Lucknow Super Gaints</option>    
-            </select>
-            <select name="bowling_team" id="teams">
-                <option value=""> Select Bowling Team</option>
-                <option value="">Chennai Super kings</option>
-                <option value="">Mumbai Indians</option> 
-                <option value="">Punjab kings</option>
-                <option value="">Kolkata Knight Riders</option> 
-                <option value="">Gujarat Titans</option>
-                <option value="">Rajasthan Royals</option> 
-                <option value="">Delhi Capitals</option>
-                <option value="">Royal Challengers Bangalore</option>
-                <option value="">Sunrisers Hyderabad</option>
-                <option value="">Lucknow Super Gaints</option>  
-  
-            </select>
-            <select name="selected_city" id="venue">
-                <option value=""> Select Venue</option>
-                <option value="">Ahmedabad </option>
-                <option value="">Mumbai </option>
-                <option value="">Kolkata </option>
-                <option value="">Navi Mumbai </option>
-                <option value="">Pune </option>
-                <option value="">Dubai </option>
-                <option value="">Sharjah </option>
-                <option value="">Abu Dhabi </option>
-                <option value="">Delhi </option>
-                <option value="">Chennai </option>
-                <option value="">Visakhapatnam</option>
-                <option value="">Hyderabad </option>
-                <option value="">Chandigarh</option>
-                <option value="">Bangalure</option>
-                <option value="">Jaipur </option>
-                <option value="">Indore </option>
-                <option value="">Kanpur </option>
-                <option value="">Rajkot </option>
-                <option value="">Raipur </option>
-                <option value="">Dharamsala</option>
-                <option value="">Mohali</option>
-                <option value="">Nagpur </option>
-                <option value="">Durban </option>
-                <option value="">Centurion </option>
-                <option value="">Lucknow</option>
-                <option value="">Cuttak </option>
-                <option value="">Johannesburg</option>
-                <option value="">Bloemfontein</option>
-                <option value="">Port Elizabeth</option>
-                <option value="">Cape Town</option>
-                <option value="">Durban </option>
-                <option value="">Guwahati </option>
-                <option value="">Kochi </option>
-                <option value="">Kimberley</option>
-            </select>
-            
-                <input type="Number" name="target" placeholder="Target" id="info">
-                <input type="Number" name="score" placeholder="Score" id="info">
-                <input type="Number" name="balls_left" placeholder="Ball_left" id="info">
-                <input type="Number" name="wickets" placeholder="Wicket Down" id="info">
-            
-                <input class="btn" type="submit" value="predict"> 
-        </form>
-    </div>
-    <img id="stick1" src="{{ url_for('static', filename='Sticker.png') }}" alt="" >
-    <img id="stick" src="{{ url_for('static', filename='Pic3.png') }}" alt="" >
-    <img id="last"  src="{{ url_for('static', filename='Ball.png') }}" alt="" >
-    <img id="lower" src="{{ url_for('static', filename='ipl.png') }}" alt="">
+    <header>
+      <div class="backg">
+        <h1 class="heading">WELCOME TO OUR IPL PREDICTION APP</h1>
+        <h3>We predict the possibility of a team winning an IPL match based on the current situation.</h3>
+        <img id="pic1" src="{{ url_for('static', filename='ipl.png') }}" alt="" />
+       
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="head2 form" id="predictionForm">
+          <h1 class="form-heading" style="text-align:center;">IPL Winning Predictor</h1>
+          <form id ="matchForm" action="/result" method="post" enctype="multipart/form-data" autocomplete="off">
+            <div class="form-group">
+              <label for="batting_team"></label>
+              <select name="batting_team" id="batting_team" required>
+                <option value="">Select Batting Team</option>
+                <option value="Chennai Super Kings">Chennai Super Kings</option>
+                <option value="Mumbai Indians">Mumbai Indians</option>
+                <option value="Punjab Kings">Punjab Kings</option>
+                <option value="Kolkata Knight Riders">
+                  Kolkata Knight Riders
+                </option>
+                <option value="Gujarat Titans">Gujarat Titans</option>
+                <option value="Rajasthan Royals">Rajasthan Royals</option>
+                <option value="Delhi Capitals">Delhi Capitals</option>
+                <option value="Royal Challengers Bangalore">
+                  Royal Challengers Bangalore
+                </option>
+                <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+                <option value="Lucknow Super Giants">
+                  Lucknow Super Giants
+                </option>
+                <!-- Add options here -->
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="bowling_team"></label>
+              <select name="bowling_team" id="bowling_team" required>
+                <option value="">Select Bowling Team</option>
+                <option value="Chennai Super Kings">Chennai Super Kings</option>
+                <option value="Mumbai Indians">Mumbai Indians</option>
+                <option value="Punjab Kings">Punjab Kings</option>
+                <option value="Kolkata Knight Riders">
+                  Kolkata Knight Riders
+                </option>
+                <option value="Gujarat Titans">Gujarat Titans</option>
+                <option value="Rajasthan Royals">Rajasthan Royals</option>
+                <option value="Delhi Capitals">Delhi Capitals</option>
+                <option value="Royal Challengers Bangalore">
+                  Royal Challengers Bangalore
+                </option>
+                <option value="Sunrisers Hyderabad">Sunrisers Hyderabad</option>
+                <option value="Lucknow Super Giants">
+                  Lucknow Super Giants
+                </option>
+                <!-- Add options here -->
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="selected_city"></label>
+              <select name="selected_city" id="selected_city" required>
+                <option value="">Select Venue</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Navi Mumbai">Navi Mumbai</option>
+                <option value="Pune">Pune</option>
+                <option value="Dubai">Dubai</option>
+                <option value="Sharjah">Sharjah</option>
+                <option value="Abu Dhabi">Abu Dhabi</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Visakhapatnam">Visakhapatnam</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Indore">Indore</option>
+                <option value="Kanpur">Kanpur</option>
+                <option value="Rajkot">Rajkot</option>
+                <option value="Raipur">Raipur</option>
+                <option value="Dharamsala">Dharamsala</option>
+                <option value="Mohali">Mohali</option>
+                <option value="Nagpur">Nagpur</option>
+                <option value="Durban">Durban</option>
+                <option value="Centurion">Centurion</option>
+                <option value="Lucknow">Lucknow</option>
+                <option value="Cuttack">Cuttack</option>
+                <option value="Johannesburg">Johannesburg</option>
+                <option value="Bloemfontein">Bloemfontein</option>
+                <option value="Port Elizabeth">Port Elizabeth</option>
+                <option value="Cape Town">Cape Town</option>
+                <option value="Durban">Durban</option>
+                <option value="Guwahati">Guwahati</option>
+                <option value="Kochi">Kochi</option>
+                <option value="Kimberley">Kimberley</option>
+                <!-- Add options here -->
+              </select>
+            </div>
+            <div class="form-group">
+              <input type="number" name="target" placeholder="Target" id="target" required />
+            </div>
+            <div class="form-group">
+              <input type="number" name="score" placeholder="Score" id="score" required />
+            </div>
+            <div class="form-group">
+              <input type="number" name="balls_left" placeholder="Balls Left" id="balls_left" required />
+            </div>
+            <div class="form-group">
+              <input type="number" name="wickets" placeholder="Wickets Down" id="wickets" required />
+            </div>
+            <input class="btn" type="submit" value="Predict" />
+          </form>
+          <button id="changeColorBtn" class="btn">Change Form Color</button>
+        </div>
+      </div>
+    </main>
     <footer>
-        <div class="footer">
-        <p>
-          Made with ❤️ by
-          <a href="https://github.com/Sauravkr1806" target="_blank" style="color: black;">
-            Saurav_Kr
-          </a>
-          |
-          <span id="year">&copy; </span>
-          |
-          <a
-            href="https://github.com/Sauravkr1806/IPL-Predictor"
-            target="_blank" style="color: black;"
-          >
-            Source
-          </a>
-        </p>
-    </div>
-      </footer>
-    </div>
+      <div class="footer">
+        <p>Created with ❤️ by <a href="https://github.com/Sauravkr1806" target="_blank">Saurav_Kr</a> | <span id="year">&copy;</span> | <a href="https://github.com/Sauravkr1806/IPL-Predictor" target="_blank">Source</a></p>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#changeColorBtn').click(function() {
+                $('#predictionForm').css('background-color', getRandomColor());
+            });
+            $('#toggleModeBtn').click(function() {
+                $('body').toggleClass('dark-mode');
+            });
+            function getRandomColor() {
+                var letters = '0123456789ABCDEF';
+                var color = '#';
+                for (var i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                }
+                return color;
+            }
+        });
+    </script>
+    <script>
+
+      document.getElementById('matchForm').addEventListener('submit', function(event) {
+          
+          const batting_team = document.getElementById('batting_team').value;
+          const bowling_team = document.getElementById('bowling_team').value;
+
+          const score = parseInt(document.getElementById('score').value);
   
+          const target = parseInt(document.getElementById('target').value);
+  
+          const ballsLeft = parseInt(document.getElementById('balls_left').value);
+  
+          const wickets = parseInt(document.getElementById('wickets').value);
+  
+          if(batting_team == bowling_team){
+              alert('Batting Team and Bowling team cannot be same!');
+              
+              event.preventDefault();
+          }else if (score > target) {
+  
+              alert('Score cannot be greater than the target.');
+  
+              event.preventDefault(); // Prevent form submission
+  
+          } else if (ballsLeft > 120) {
+  
+              alert('Balls left cannot be greater than 120.');
+  
+              event.preventDefault(); // Prevent form submission
+  
+          } else if (wickets >= 10) {
+  
+              alert('Wickets down must be less than 10.');
+  
+              event.preventDefault(); // Prevent form submission
+  
+          }
+  
+      });
+  </script>
 </body>
 </html>
